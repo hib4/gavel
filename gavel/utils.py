@@ -17,6 +17,7 @@ import email.mime.multipart
 import email.mime.text
 import json
 from flask import request
+from flask import Response
 
 def gen_secret(length):
     return base64.b32encode(os.urandom(length))[:length].decode('utf8').lower()
